@@ -104,7 +104,7 @@ export default function FullpagePresentation({
   }, [currentSlide]);
 
   return (
-    <div className="relative w-full h-screen overflow-hidden bg-[#E9E9E9] bg-[url('/images/bg-pattern-grey.png')] bg-[length:1100px_30px] select-none">
+    <div className="relative w-full h-screen overflow-hidden bg-paper bg-[#F5F6F2] select-none">
       {/* ========================================================
           SLIDES WRAPPER (Transform-based 100vh viewport slider)
           ======================================================== */}
@@ -402,7 +402,7 @@ export default function FullpagePresentation({
             <span
               className={`block rounded-full transition-all duration-300 ${
                 currentSlide === i
-                  ? 'w-3 h-3 bg-[#ba9168] ring-2 ring-[#ba9168]/40 ring-offset-2 ring-offset-[#E9E9E9]'
+                  ? 'w-3 h-3 bg-[#ba9168] ring-2 ring-[#ba9168]/40 ring-offset-2 ring-offset-[#F5F6F2]'
                   : 'w-2 h-2 bg-[#505454]/40 hover:bg-[#ba9168]'
               }`}
             />
@@ -442,7 +442,7 @@ export default function FullpagePresentation({
                 }
               }}
               aria-label="Open site menu"
-              className="group relative w-14 h-14 rounded-full border-2 border-dashed border-[#ba9168] hover:border-solid hover:scale-105 bg-[#E9E9E9]/90 backdrop-blur-sm flex items-center justify-center transition-all duration-300 focus:outline-none shadow-sm"
+              className="group relative w-14 h-14 rounded-full border-2 border-dashed border-[#ba9168] hover:border-solid hover:scale-105 bg-[#F5F6F2]/90 backdrop-blur-sm flex items-center justify-center transition-all duration-300 focus:outline-none shadow-sm"
             >
               <span className="font-mono text-[10px] tracking-[0.15em] uppercase text-[#ba9168] font-medium group-hover:text-[#13284A] transition-colors">
                 Menu

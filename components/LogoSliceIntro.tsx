@@ -133,11 +133,11 @@ export default function LogoSliceIntro({ onComplete }: LogoSliceIntroProps) {
           Glides smoothly to the left on opening
           ======================================================== */}
       <div
-        className={`absolute top-0 bottom-0 left-0 w-1/2 overflow-hidden transition-transform duration-[900ms] ease-[cubic-bezier(0.76,0,0.24,1)] will-change-transform ${
+        className={`absolute top-0 bottom-0 left-0 w-1/2 overflow-hidden transition-transform duration-[900ms] ease-[cubic-bezier(0.76,0,0.24,1)] will-change-transform border-r border-[#DCE2DE]/60 ${
           isOpening ? '-translate-x-full' : 'translate-x-0'
         }`}
         style={{
-          background: '#090D16',
+          background: '#F5F6F2',
         }}
       >
         {/* Full-viewport canvas spanning 200% width of parent (= 100% viewport width) */}
@@ -160,11 +160,11 @@ export default function LogoSliceIntro({ onComplete }: LogoSliceIntroProps) {
           Glides smoothly to the right on opening
           ======================================================== */}
       <div
-        className={`absolute top-0 bottom-0 right-0 w-1/2 overflow-hidden transition-transform duration-[900ms] ease-[cubic-bezier(0.76,0,0.24,1)] will-change-transform ${
+        className={`absolute top-0 bottom-0 right-0 w-1/2 overflow-hidden transition-transform duration-[900ms] ease-[cubic-bezier(0.76,0,0.24,1)] will-change-transform border-l border-[#DCE2DE]/60 ${
           isOpening ? 'translate-x-full' : 'translate-x-0'
         }`}
         style={{
-          background: '#090D16',
+          background: '#F5F6F2',
         }}
       >
         {/* Full-viewport canvas spanning 200% width of parent (= 100% viewport width) */}

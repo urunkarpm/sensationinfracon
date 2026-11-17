@@ -34,7 +34,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-40 w-full bg-[#E9E9E9]/95 bg-[url('/images/bg-pattern-grey.png')] bg-[length:1100px_30px] border-b border-black/[0.06] transition-all duration-300">
+      <header className="fixed top-0 left-0 right-0 z-40 w-full bg-[#F5F6F2]/95 backdrop-blur-md border-b border-mist/80 transition-all duration-300">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-8 h-20 sm:h-24 flex items-center justify-between relative">
           {/* Left: Private Advisory Desk shortcut */}
           <div className="w-1/4 hidden md:flex items-center">

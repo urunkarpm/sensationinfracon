@@ -80,8 +80,6 @@ html {
 
 body {
   background-color: var(--color-paper);
-  background-image: url('/images/bg-pattern-grey.png');
-  background-size: 1100px 30px;
   color: var(--color-text);
   font-family: var(--font-brandon), 'Brandon Grotesque Light', 'Brandon Grotesque', sans-serif;
   letter-spacing: 0.7px;

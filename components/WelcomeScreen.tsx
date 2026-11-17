@@ -33,7 +33,7 @@ export default function WelcomeScreen({
       <IntroMask onComplete={() => setMaskDone(true)} brandMode={brandMode} />
 
       {/* 2. THE WELCOME SCREEN CANVAS */}
-      <div className="min-h-screen w-full flex flex-col justify-between items-center py-8 sm:py-12 px-4 relative select-none bg-[#E9E9E9] bg-[url('/images/bg-pattern-grey.png')] bg-[length:1100px_30px]">
+      <div className="min-h-screen w-full flex flex-col justify-between items-center py-8 sm:py-12 px-4 relative select-none bg-[#F5F6F2] bg-paper">
         {/* Header with Centered Brand Insignia & Strapline */}
         <header className="w-full flex flex-col items-center justify-center pt-2 sm:pt-4">
           <div className="flex flex-col items-center text-center">

@@ -74,7 +74,7 @@ export default function FullscreenMenu({ isOpen, onClose }: FullscreenMenuProps)
         role="dialog"
         aria-modal="true"
         aria-label="Site Navigation"
-        className={`fixed top-0 right-0 bottom-0 z-50 h-full w-full sm:w-[50vw] max-w-[560px] bg-[#E9E9E9] bg-[url('/images/bg-pattern-grey.png')] bg-[length:1100px_30px] border-l border-black/[0.08] shadow-[-20px_0_50px_rgba(0,0,0,0.2)] flex flex-col justify-between transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+        className={`fixed top-0 right-0 bottom-0 z-50 h-full w-full sm:w-[50vw] max-w-[560px] bg-[#F5F6F2] border-l border-mist shadow-[-20px_0_50px_rgba(0,0,0,0.1)] flex flex-col justify-between transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
