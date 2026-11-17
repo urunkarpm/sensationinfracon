@@ -73,7 +73,7 @@ export default function Header() {
             </Link>
           </div>
 
-          {/* Right: The Signature Gray & Farrar 3-Bar Slider Hamburger */}
+          {/* Right: Navigation Drawer Menu Hamburger */}
           <div className="w-1/4 flex items-center justify-end">
             <button
               type="button"

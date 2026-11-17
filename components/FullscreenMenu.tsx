@@ -60,7 +60,7 @@ export default function FullscreenMenu({ isOpen, onClose }: FullscreenMenuProps)
 
   return (
     <>
-      {/* Dark backdrop overlay mask (Gray & Farrar .mask-open-menu) */}
+      {/* Dark backdrop overlay mask */}
       <div
         onClick={onClose}
         aria-hidden="true"
@@ -69,7 +69,7 @@ export default function FullscreenMenu({ isOpen, onClose }: FullscreenMenuProps)
         }`}
       />
 
-      {/* Off-canvas slide drawer from the right (Gray & Farrar .navbar-default) */}
+      {/* Off-canvas slide drawer from the right */}
       <aside
         role="dialog"
         aria-modal="true"
@@ -114,7 +114,7 @@ export default function FullscreenMenu({ isOpen, onClose }: FullscreenMenuProps)
           </button>
         </div>
 
-        {/* Center Navigation Links (Gray & Farrar Signature .navbar-nav) */}
+        {/* Center Navigation Links */}
         <div className="px-6 sm:px-12 py-8 overflow-y-auto flex-1 flex flex-col justify-start">
           <h4 className="font-brandon text-[12px] sm:text-[13px] tracking-[0.25em] uppercase text-[#ba9168] font-medium mb-6 select-none">
             Menu

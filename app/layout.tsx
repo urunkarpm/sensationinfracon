@@ -7,7 +7,7 @@ import Footer from '@/components/Footer';
 import SkipLink from '@/components/SkipLink';
 import LogoSliceIntro from '@/components/LogoSliceIntro';
 
-// Gray & Farrar Authentic Typography
+// Authentic Typography
 const brandonGrotesque = localFont({
   src: [
     {

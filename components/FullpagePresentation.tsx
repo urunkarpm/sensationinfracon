@@ -7,16 +7,13 @@ import PlotSurveyHero from '@/components/PlotSurveyHero';
 import EnquiryForm from '@/components/EnquiryForm';
 
 interface FullpagePresentationProps {
-  initialBrandMode?: 'gf' | 'sensation';
   onOpenMenu?: () => void;
 }
 
 export default function FullpagePresentation({
-  initialBrandMode = 'sensation',
   onOpenMenu,
 }: FullpagePresentationProps) {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [brandMode, setBrandMode] = useState<'gf' | 'sensation'>(initialBrandMode);
   const totalSlides = 5;
   const isTransitioning = useRef(false);
   const touchStartY = useRef(0);
@@ -124,46 +121,23 @@ export default function FullpagePresentation({
             {/* Left Content Box */}
             <div className="text-center space-y-6 max-w-lg mx-auto">
               <h2 className="font-heading text-4xl sm:text-5xl lg:text-[54px] text-[#505454] font-normal tracking-tight leading-[1.1]">
-                {brandMode === 'gf' ? (
-                  <>
-                    London <span className="text-[#ba9168]">calling</span>
-                  </>
-                ) : (
-                  <>
-                    Hyderabad <span className="text-[#ba9168]">calling</span>
-                  </>
-                )}
+                Hyderabad <span className="text-[#ba9168]">calling</span>
               </h2>
 
               <p className="font-mono text-xs sm:text-[12.5px] uppercase tracking-[0.08em] text-[#505454] leading-[22px] sm:leading-[24px]">
-                {brandMode === 'gf'
-                  ? 'WE ARE A QUINTESSENTIALLY BRITISH BRAND WITH A GLOBAL REACH AND AN INTERNATIONAL CLIENTELE. OUR HEADQUARTERS IS A DISCREET LONDON TOWNHOUSE IN MAYFAIR, BUT OUR HIGH-FLYING CLIENTS ARE TRULY COSMOPOLITAN, HAILING FROM EVERY MAJOR CITY AROUND THE WORLD. OUR NETWORK MAY BE EXCLUSIVE, BUT IT KNOWS NO BORDERS.'
-                  : 'WE ARE A PREMIER REAL ESTATE AND CAPITAL DEVELOPMENT ADVISORY WITH A NATIONAL REACH AND A SELECT PRIVATE CLIENTELE. OUR HEADQUARTERS IS A DISCREET DESK IN BANJARA HILLS, HYDERABAD, BUT OUR DISCERNING INVESTORS ARE TRULY COSMOPOLITAN, ACQUIRING STRATEGIC ASSETS ACROSS INDIA’S HIGH-GROWTH REGIONS. OUR NETWORK MAY BE EXCLUSIVE, BUT IT KNOWS NO BORDERS.'}
+                WE ARE A PREMIER REAL ESTATE AND CAPITAL DEVELOPMENT ADVISORY WITH A NATIONAL REACH AND A SELECT PRIVATE CLIENTELE. OUR HEADQUARTERS IS A DISCREET DESK IN BANJARA HILLS, HYDERABAD, BUT OUR DISCERNING INVESTORS ARE TRULY COSMOPOLITAN, ACQUIRING STRATEGIC ASSETS ACROSS INDIA’S HIGH-GROWTH REGIONS. OUR NETWORK MAY BE EXCLUSIVE, BUT IT KNOWS NO BORDERS.
               </p>
             </div>
 
             {/* Right Visual Box */}
             <div className="w-full flex items-center justify-center">
-              {brandMode === 'gf' ? (
-                <div className="relative w-full max-w-[420px] sm:max-w-[480px] h-[340px] sm:h-[420px] lg:h-[460px] flex items-center justify-center">
-                  <Image
-                    src="/images/london-calling.gif"
-                    alt="London Calling"
-                    fill
-                    priority
-                    unoptimized
-                    className="object-contain"
-                  />
+              <div className="w-full max-w-[480px] p-6 rounded-2xl bg-white/70 border border-mist shadow-sm">
+                <div className="flex items-center justify-between pb-3 mb-3 border-b border-mist text-[10px] font-mono text-[#505454] tracking-luxury uppercase">
+                  <span>[CADASTRE 01]</span>
+                  <span className="text-[#ba9168]">Master Plot Drawing</span>
                 </div>
-              ) : (
-                <div className="w-full max-w-[480px] p-6 rounded-2xl bg-white/70 border border-mist shadow-sm">
-                  <div className="flex items-center justify-between pb-3 mb-3 border-b border-mist text-[10px] font-mono text-[#505454] tracking-luxury uppercase">
-                    <span>[CADASTRE 01]</span>
-                    <span className="text-[#ba9168]">Master Plot Drawing</span>
-                  </div>
-                  <PlotSurveyHero />
-                </div>
-              )}
+                <PlotSurveyHero />
+              </div>
             </div>
           </div>
         </section>
@@ -179,46 +153,24 @@ export default function FullpagePresentation({
           >
             {/* Left Visual Box (Order 2 on mobile, Order 1 on desktop) */}
             <div className="order-2 lg:order-1 w-full flex items-center justify-center">
-              {brandMode === 'gf' ? (
-                <div className="relative w-full max-w-[420px] sm:max-w-[480px] h-[340px] sm:h-[420px] lg:h-[460px] flex items-center justify-center">
-                  <Image
-                    src="/images/lonely-at-the-top.gif"
-                    alt="Lonely at the top"
-                    fill
-                    unoptimized
-                    className="object-contain"
-                  />
-                </div>
-              ) : (
-                <div className="relative w-full max-w-lg aspect-[16/11] rounded-2xl overflow-hidden border border-mist shadow-sm">
-                  <Image
-                    src="/images/Untitled-design-25-1024x427.webp"
-                    alt="Master Land Parcels"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              )}
+              <div className="relative w-full max-w-lg aspect-[16/11] rounded-2xl overflow-hidden border border-mist shadow-sm">
+                <Image
+                  src="/images/Untitled-design-25-1024x427.webp"
+                  alt="Master Land Parcels"
+                  fill
+                  className="object-cover"
+                />
+              </div>
             </div>
 
             {/* Right Content Box */}
             <div className="order-1 lg:order-2 text-center space-y-6 max-w-lg mx-auto">
               <h2 className="font-heading text-4xl sm:text-5xl lg:text-[54px] text-[#505454] font-normal tracking-tight leading-[1.1]">
-                {brandMode === 'gf' ? (
-                  <>
-                    It can be <span className="text-[#ba9168]">lonely at the top</span>
-                  </>
-                ) : (
-                  <>
-                    Uncompromising <span className="text-[#ba9168]">due diligence</span>
-                  </>
-                )}
+                Uncompromising <span className="text-[#ba9168]">due diligence</span>
               </h2>
 
               <p className="font-mono text-xs sm:text-[12.5px] uppercase tracking-[0.08em] text-[#505454] leading-[22px] sm:leading-[24px]">
-                {brandMode === 'gf'
-                  ? 'OUR CLIENTS DON’T COMPROMISE AND NEITHER DO WE. OUR SELECTION PROCESS IS RIGOROUS — RUTHLESS, EVEN — AND HAS RESULTED IN A PRIVATE CLIENT LIST THAT IS THE ENVY OF MANY. HIGH-ACHIEVING, HIGH-PERFORMING, AND WITH THE WORLD AS THEIR PLAYGROUND, OUR CLIENTS ARE PART OF A SELECT GROUP OF PEOPLE WHERE EQUALS ARE FEW AND FAR BETWEEN. THEIR LIVES MAY BE LIMITLESS, BUT THE NUMBER OF SUITABLE PARTNERS THEY MEET MOST CERTAINLY ISN’T. WE REDRESS THIS IMBALANCE AND INTRODUCE THEM ONE TO THE OTHER, SELECTIVELY, SEAMLESSLY AND DISCREETLY.'
-                  : 'OUR CLIENTS DON’T COMPROMISE AND NEITHER DO WE. OUR SELECTION PROCESS IS RIGOROUS — RUTHLESS, EVEN — AND HAS RESULTED IN A PRIVATE LAND BANK THAT IS THE ENVY OF MANY. HIGH-ACHIEVING, HIGH-PERFORMING, AND WITH MEASURED CAPITAL PRESERVATION AS THEIR PRIORITY, OUR PARTNERS ARE PART OF A SELECT GROUP WHERE EQUALS ARE FEW AND FAR BETWEEN. WE SAFEGUARD THEIR CAPITAL AND EXECUTE VALUE SELECTIVELY, SEAMLESSLY AND DISCREETLY.'}
+                OUR CLIENTS DON’T COMPROMISE AND NEITHER DO WE. OUR SELECTION PROCESS IS RIGOROUS — RUTHLESS, EVEN — AND HAS RESULTED IN A PRIVATE LAND BANK THAT IS THE ENVY OF MANY. HIGH-ACHIEVING, HIGH-PERFORMING, AND WITH MEASURED CAPITAL PRESERVATION AS THEIR PRIORITY, OUR PARTNERS ARE PART OF A SELECT GROUP WHERE EQUALS ARE FEW AND FAR BETWEEN. WE SAFEGUARD THEIR CAPITAL AND EXECUTE VALUE SELECTIVELY, SEAMLESSLY AND DISCREETLY.
               </p>
             </div>
           </div>
@@ -240,40 +192,26 @@ export default function FullpagePresentation({
               </h2>
 
               <p className="font-mono text-xs sm:text-[12.5px] uppercase tracking-[0.08em] text-[#505454] leading-[22px] sm:leading-[24px]">
-                {brandMode === 'gf'
-                  ? 'GRAY & FARRAR IS A SECOND-GENERATION FAMILY BUSINESS. WITH OVER 40 YEARS’ COMBINED EXPERIENCE, WE ARE WIDELY CREDITED AS BEING THE PIONEERS OF THE MATCHMAKING INDUSTRY. COUPLED WITH OUR ELEGANT APPROACH TO WHAT WE DO, OUR LONGEVITY, PEDIGREE AND EXCEPTIONAL SUCCESS RATE HAVE SEEN US WELCOMED INTO THE WORLD’S MOST PRIVILEGED AND FIERCELY GUARDED SOCIAL CIRCLES. WE HAVE THE CONNECTIONS AND NETWORK TO ATTRACT THE RIGHT PEOPLE FOR THE RIGHT PEOPLE.'
-                  : 'SENSATION INFRACON IS A DISCREET DEVELOPMENT AND CAPITAL INSTITUTION. WITH EXTENSIVE COMBINED LEADERSHIP IN LAND ACQUISITION, CLEAR-TITLE DUE DILIGENCE, AND HIGH-YIELD ASSET STRUCTURING, WE ARE RECOGNIZED AS PIONEERS OF THE JOINT DEVELOPMENT FRAMEWORK. COUPLED WITH OUR RIGOROUS IN-HOUSE LEGAL PROTOCOLS, OUR PEDIGREE AND FLAWLESS DELIVERY RECORD HAVE SEEN US WELCOMED BY INDIA’S MOST REPUTED LANDOWNERS.'}
+                SENSATION INFRACON IS A DISCREET DEVELOPMENT AND CAPITAL INSTITUTION. WITH EXTENSIVE COMBINED LEADERSHIP IN LAND ACQUISITION, CLEAR-TITLE DUE DILIGENCE, AND HIGH-YIELD ASSET STRUCTURING, WE ARE RECOGNIZED AS PIONEERS OF THE JOINT DEVELOPMENT FRAMEWORK. COUPLED WITH OUR RIGOROUS IN-HOUSE LEGAL PROTOCOLS, OUR PEDIGREE AND FLAWLESS DELIVERY RECORD HAVE SEEN US WELCOMED BY INDIA’S MOST REPUTED LANDOWNERS.
               </p>
             </div>
 
             {/* Right Visual Box */}
             <div className="w-full flex items-center justify-center">
-              {brandMode === 'gf' ? (
-                <div className="relative w-full max-w-[420px] sm:max-w-[480px] h-[340px] sm:h-[420px] lg:h-[460px] flex items-center justify-center">
-                  <Image
-                    src="/images/wealth-of-experience.gif"
-                    alt="Wealth of experience"
-                    fill
-                    unoptimized
-                    className="object-contain"
-                  />
-                </div>
-              ) : (
-                <div className="relative w-full max-w-lg aspect-[16/11] rounded-2xl overflow-hidden border border-mist shadow-sm">
-                  <Image
-                    src="/images/from-renting-to-owning-mumbais-real-etate-revolution-1-1024x427.webp"
-                    alt="Institutional Capital Exits"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              )}
+              <div className="relative w-full max-w-lg aspect-[16/11] rounded-2xl overflow-hidden border border-mist shadow-sm">
+                <Image
+                  src="/images/from-renting-to-owning-mumbais-real-etate-revolution-1-1024x427.webp"
+                  alt="Institutional Capital Exits"
+                  fill
+                  className="object-cover"
+                />
+              </div>
             </div>
           </div>
         </section>
 
         {/* ========================================================
-            SLIDE 04: "Personal, not digital..." (Left Visual, Right Text)
+            SLIDE 04: "Tangible, not speculative..." (Left Visual, Right Text)
             ======================================================== */}
         <section className="w-full h-screen flex items-center justify-center relative px-6 sm:px-12 lg:px-16 pt-20 pb-16">
           <div
@@ -283,46 +221,24 @@ export default function FullpagePresentation({
           >
             {/* Left Visual Box */}
             <div className="order-2 lg:order-1 w-full flex items-center justify-center">
-              {brandMode === 'gf' ? (
-                <div className="relative w-full max-w-[420px] sm:max-w-[480px] h-[340px] sm:h-[420px] lg:h-[460px] flex items-center justify-center">
-                  <Image
-                    src="/images/personal-not-digital.gif"
-                    alt="Personal not digital"
-                    fill
-                    unoptimized
-                    className="object-contain"
-                  />
-                </div>
-              ) : (
-                <div className="relative w-full max-w-lg aspect-[16/11] rounded-2xl overflow-hidden border border-mist shadow-sm">
-                  <Image
-                    src="/images/goa-getaways-your-real-estate-escape-plan-1-1024x427.webp"
-                    alt="Hospitality and Retreat Sanctuaries"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              )}
+              <div className="relative w-full max-w-lg aspect-[16/11] rounded-2xl overflow-hidden border border-mist shadow-sm">
+                <Image
+                  src="/images/goa-getaways-your-real-estate-escape-plan-1-1024x427.webp"
+                  alt="Hospitality and Retreat Sanctuaries"
+                  fill
+                  className="object-cover"
+                />
+              </div>
             </div>
 
             {/* Right Content Box */}
             <div className="order-1 lg:order-2 text-center space-y-6 max-w-lg mx-auto">
               <h2 className="font-heading text-4xl sm:text-5xl lg:text-[54px] text-[#505454] font-normal tracking-tight leading-[1.1]">
-                {brandMode === 'gf' ? (
-                  <>
-                    Personal, <span className="text-[#ba9168]">not digital...</span>
-                  </>
-                ) : (
-                  <>
-                    Tangible, <span className="text-[#ba9168]">not speculative...</span>
-                  </>
-                )}
+                Tangible, <span className="text-[#ba9168]">not speculative...</span>
               </h2>
 
               <p className="font-mono text-xs sm:text-[12.5px] uppercase tracking-[0.08em] text-[#505454] leading-[22px] sm:leading-[24px]">
-                {brandMode === 'gf'
-                  ? 'GRAY & FARRAR IS ABOUT PEOPLE. NO APPS, ALGORITHMS OR DATA MATCHES. WE ARE THE VERY OPPOSITE OF THE FACELESS IMPERSONALITY AND QUESTIONABLE SECURITY OF THE INTERNET. WE BELIEVE IN THE TRADITIONAL FACE-TO-FACE APPROACH, HUMAN INTERACTION AND SAFEGUARDING OUR CLIENTS’ CONFIDENTIALITY AT ALL COSTS. OUR MATCHMAKING RELIES ON OUR DECADES OF EXPERTISE, EXPERIENCE AND INTUITION — AND IT SHOWS.'
-                  : 'SENSATION INFRACON IS ABOUT REAL LAND, TANGIBLE ASSETS AND STATUTORY SECURITY. NO SPECULATIVE APPS OR ALGORITHMIC COMMISSIONS. WE ARE THE VERY OPPOSITE OF THE FACELESS IMPERSONALITY OF GENERIC BROKERAGE. WE BELIEVE IN TRADITIONAL FACE-TO-FACE ENGAGEMENT, RIGOROUS PHYSICAL VERIFICATION, AND SAFEGUARDING OUR PARTNERS’ CAPITAL AT ALL COSTS.'}
+                SENSATION INFRACON IS ABOUT REAL LAND, TANGIBLE ASSETS AND STATUTORY SECURITY. NO SPECULATIVE APPS OR ALGORITHMIC COMMISSIONS. WE ARE THE VERY OPPOSITE OF THE FACELESS IMPERSONALITY OF GENERIC BROKERAGE. WE BELIEVE IN TRADITIONAL FACE-TO-FACE ENGAGEMENT, RIGOROUS PHYSICAL VERIFICATION, AND SAFEGUARDING OUR PARTNERS’ CAPITAL AT ALL COSTS.
               </p>
             </div>
           </div>
@@ -385,7 +301,7 @@ export default function FullpagePresentation({
       </div>
 
       {/* ========================================================
-          RIGHT SIDE NAVIGATION DOTS (Gray & Farrar Signature)
+          RIGHT SIDE NAVIGATION DOTS
           ======================================================== */}
       <nav
         aria-label="Slide navigation"
@@ -411,7 +327,7 @@ export default function FullpagePresentation({
       </nav>
 
       {/* ========================================================
-          BOTTOM CENTER MOUSE SCROLL INDICATOR / CIRCULAR MENU BUTTON (G&F Signature)
+          BOTTOM CENTER MOUSE SCROLL INDICATOR / CIRCULAR MENU BUTTON
           ======================================================== */}
       <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-30 flex flex-col items-center select-none">
         {currentSlide < totalSlides - 1 ? (
@@ -431,7 +347,7 @@ export default function FullpagePresentation({
           </button>
         ) : (
           <div className="flex items-center gap-3">
-            {/* Gray & Farrar Signature Circular Menu Button on Final Slide */}
+            {/* Circular Menu Button on Final Slide */}
             <button
               type="button"
               onClick={() => {
@@ -464,21 +380,6 @@ export default function FullpagePresentation({
       </div>
 
       {/* ========================================================
-          BOTTOM-LEFT DUAL-MODE BRAND TOGGLE
-          ======================================================== */}
-      <div className="fixed bottom-6 left-6 z-30 hidden sm:flex items-center gap-2 text-[10px] font-mono tracking-luxury uppercase">
-        <button
-          type="button"
-          onClick={() => setBrandMode(brandMode === 'gf' ? 'sensation' : 'gf')}
-          className="px-3.5 py-1.5 rounded-full border border-[#ba9168]/50 hover:border-[#ba9168] text-[#ba9168] hover:text-[#13284A] bg-white/60 backdrop-blur-sm transition-all focus:outline-none shadow-sm"
-        >
-          {brandMode === 'gf'
-            ? 'Switch to Sensation Infracon Real Estate Copy →'
-            : '← Switch to Gray & Farrar 1:1 Original'}
-        </button>
-      </div>
-
-      {/* ========================================================
           MINIMAL BOTTOM-RIGHT LEGAL / PRIVACY BAR
           ======================================================== */}
       <div className="fixed bottom-6 right-6 z-20 hidden md:flex items-center gap-3 text-[10px] font-mono tracking-luxury uppercase text-[#505454]/60">
@@ -487,7 +388,7 @@ export default function FullpagePresentation({
         </Link>
         <span>|</span>
         <span>
-          © {brandMode === 'gf' ? 'Gray & Farrar 2024' : 'Sensation Infracon Pvt. Ltd. 2026'}
+          © Sensation Infracon Pvt. Ltd. 2026
         </span>
       </div>
     </div>

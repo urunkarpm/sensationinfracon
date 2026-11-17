@@ -20,7 +20,7 @@ export default function Footer() {
 
   return (
     <>
-      {/* If on Homepage, show Gray & Farrar style minimal bottom bar with expandable directory */}
+      {/* Minimal bottom bar with expandable directory */}
       {isHome ? (
         <footer className="w-full bg-[#F5F6F2] border-t border-mist/80 py-6 px-4 sm:px-8 text-center text-text/70 select-none">
           <div className="max-w-[1200px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-[10px] sm:text-[11px] tracking-luxury uppercase">

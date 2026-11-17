@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Gray & Farrar Authentic Typography (@font-face definitions) */
+/* Authentic Typography (@font-face definitions) */
 @font-face {
   font-family: 'Brandon Grotesque Light';
   src: url('/fonts/BrandonGrotesque-Light.woff2') format('woff2'),
@@ -91,7 +91,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-granjon), 'Granjon LT', Georgia, serif;
 }
 
-/* Gray & Farrar luxury advisory typographic utilities */
+/* Luxury advisory typographic utilities */
 .tracking-luxury {
   letter-spacing: 0.12em;
 }
@@ -100,7 +100,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.08em;
 }
 
-/* Gray & Farrar circular Enter button animation */
+/* Circular Enter button animation */
 @keyframes animatecircleborder {
   0% {
     stroke-dashoffset: 251.2px;
@@ -114,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
   animation: animatecircleborder 1.2s cubic-bezier(0.25, 1, 0.5, 1) 0.3s forwards;
 }
 
-/* Gray & Farrar mouse scroll indicator animation */
+/* Mouse scroll indicator animation */
 @keyframes mouseScrollDot {
   0% {
     opacity: 1;
@@ -144,7 +144,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ========================================================
-   GRAY & FARRAR 1:1 INTRO MASK ANIMATION
+   INTRO MASK ANIMATION
    ======================================================== */
 .intro-mask {
   position: fixed;
