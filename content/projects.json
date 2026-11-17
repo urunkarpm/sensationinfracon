@@ -1,0 +1,105 @@
+[
+  {
+    "slug": "hyderabad-villa-plots-phase-1",
+    "name": "Hyderabad Plotted Enclave Phase 1",
+    "city": "Hyderabad",
+    "type": "Villa plots with world-class infrastructure",
+    "typeSlug": "villa-plots",
+    "status": "Planned",
+    "plotSizes": "TODO: Confirm plot sizes (e.g., 200 - 500 sq yds)",
+    "priceFrom": "TODO: Confirm starting price per sq yd",
+    "reraNumber": "TODO: Enter official RERA registration number",
+    "description": "Plotted land development planned with arterial road grids, underground utilities, and surveyed plot boundaries in the Hyderabad growth corridor.",
+    "mapCoordinates": "TODO: Confirm exact geographic survey coordinates for Hyderabad parcel",
+    "gallery": [
+      { "id": "g1", "label": "Site cadastre layout", "aspect": "16/9" },
+      { "id": "g2", "label": "Arterial road section plan", "aspect": "16/9" },
+      { "id": "g3", "label": "Demarcation boundary survey", "aspect": "16/9" }
+    ]
+  },
+  {
+    "slug": "mumbai-serviced-living-suites",
+    "name": "Mumbai Urban Serviced Living",
+    "city": "Mumbai",
+    "type": "Serviced living, serviced hostels, and student housing",
+    "typeSlug": "serviced-living",
+    "status": "Under evaluation",
+    "plotSizes": "TODO: Confirm unit layout dimensions (e.g., 350 - 750 sq ft)",
+    "priceFrom": "TODO: Confirm investment threshold",
+    "reraNumber": "TODO: Enter official RERA registration number",
+    "description": "High-density managed serviced living development positioned for young professionals and corporate housing in Mumbai metropolitan region.",
+    "mapCoordinates": "TODO: Confirm exact geographic coordinates for Mumbai location",
+    "gallery": [
+      { "id": "g1", "label": "Building schematic elevation", "aspect": "16/9" },
+      { "id": "g2", "label": "Floor plate circulation plan", "aspect": "16/9" }
+    ]
+  },
+  {
+    "slug": "goa-black-hole-resort",
+    "name": "Goa Coastal Digital Detox Sanctuary",
+    "city": "Goa",
+    "type": "Digital detox and \"black hole\" resorts",
+    "typeSlug": "digital-detox-resorts",
+    "status": "Planned",
+    "plotSizes": "TODO: Confirm resort villa plot sizes",
+    "priceFrom": "TODO: Confirm hospitality investor allocation",
+    "reraNumber": "TODO: Enter official RERA registration number",
+    "description": "Low-impact leisure resort development centered on off-grid seclusion, natural landscape preservation, and sustainable hospitality yields.",
+    "mapCoordinates": "TODO: Confirm exact survey coordinates for Goa parcel",
+    "gallery": [
+      { "id": "g1", "label": "Landscape contour survey", "aspect": "16/9" },
+      { "id": "g2", "label": "Eco-villa cluster layout", "aspect": "16/9" }
+    ]
+  },
+  {
+    "slug": "bengaluru-entertainment-centre",
+    "name": "Bengaluru East Leisure & Multiplex Hub",
+    "city": "Bengaluru",
+    "type": "Family entertainment centres with multiplexes",
+    "typeSlug": "family-entertainment",
+    "status": "Joint development planned",
+    "plotSizes": "TODO: Confirm commercial footprint area",
+    "priceFrom": "TODO: Confirm institutional equity tier",
+    "reraNumber": "TODO: Enter official RERA registration number",
+    "description": "Integrated family entertainment destination with multiplex screens, experiential retail, and dining anchor zones.",
+    "mapCoordinates": "TODO: Confirm Bengaluru site coordinates",
+    "gallery": [
+      { "id": "g1", "label": "Commercial floor zoning map", "aspect": "16/9" },
+      { "id": "g2", "label": "Parking & circulation schematic", "aspect": "16/9" }
+    ]
+  },
+  {
+    "slug": "chennai-industrial-housing-hub",
+    "name": "Chennai Corridor Industrial Workforce Community",
+    "city": "Chennai",
+    "type": "Blue-collar and grey-collar housing projects",
+    "typeSlug": "workforce-housing",
+    "status": "Land acquisition",
+    "plotSizes": "TODO: Confirm dorm & apartment plot sizes",
+    "priceFrom": "TODO: Confirm institutional lease commitment terms",
+    "reraNumber": "TODO: Enter official RERA registration number",
+    "description": "Dedicated workforce community housing structured adjacent to manufacturing and electronics corridors along the Chennai OMR belt.",
+    "mapCoordinates": "TODO: Confirm Chennai survey coordinates",
+    "gallery": [
+      { "id": "g1", "label": "Master plan zoning", "aspect": "16/9" },
+      { "id": "g2", "label": "Community facility layout", "aspect": "16/9" }
+    ]
+  },
+  {
+    "slug": "visakhapatnam-beach-front-plots",
+    "name": "Visakhapatnam Coastal Plotted Colony",
+    "city": "Visakhapatnam",
+    "type": "Villa plots with world-class infrastructure",
+    "typeSlug": "villa-plots",
+    "status": "Planned",
+    "plotSizes": "TODO: Confirm coastal plot dimensions",
+    "priceFrom": "TODO: Confirm coastal plot price per sq yd",
+    "reraNumber": "TODO: Enter official RERA registration number",
+    "description": "Plotted coastal residential development near Bhogapuram corridor with demarcated access roads and utility alignments.",
+    "mapCoordinates": "TODO: Confirm Bhogapuram survey parcel",
+    "gallery": [
+      { "id": "g1", "label": "Coastal setback survey", "aspect": "16/9" },
+      { "id": "g2", "label": "Internal avenue demarcation", "aspect": "16/9" }
+    ]
+  }
+]

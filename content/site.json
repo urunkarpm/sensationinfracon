@@ -1,0 +1,105 @@
+{
+  "name": "Sensation Infracon Pvt. Ltd.",
+  "alternateNames": ["Sensation Group", "Sensation Capital"],
+  "phone": "+91 98853 33333",
+  "email": "kk@sensationgroup.in",
+  "whatsapp": "https://wa.me/919885333333",
+  "copyright": "© 2026 Sensation Infracon Pvt. Ltd.",
+  "referralUrl": "https://sensationecrp.com/",
+  "formspreeEndpoint": "https://formspree.io/f/YOUR_FORM_ID",
+  "youtubeVideoId": "g4SHLYYno60",
+  "youtubeUrl": "https://youtu.be/g4SHLYYno60",
+  "slogans": [
+    "Redefining Blue Ocean Strategy",
+    "ReDefining Rule Number 72",
+    "Redefining investor Security",
+    "Be the Alpha with us."
+  ],
+  "home": {
+    "title": "Properties for investment in India | Sensation Infracon",
+    "description": "Premium and high-yield properties for investment in India, with top-class amenities.",
+    "heroHeadline": "Land, planned plot by plot.",
+    "primaryCta": "See what we build",
+    "secondaryCta": "Ask about returns",
+    "introText": "Sensation Infracon is a partner for real estate investment in premium properties across India. It offers city properties and second-home destinations. Each one aims to give value, a good location, and returns over time. It serves experienced investors and first-time buyers.",
+    "projectTypes": [
+      {
+        "id": "family-entertainment",
+        "title": "Family entertainment centres with multiplexes",
+        "code": "TYP-01",
+        "description": "Destination commercial and leisure developments structured for recurring footfall and stable lease yield."
+      },
+      {
+        "id": "villa-plots",
+        "title": "Villa plots with world-class infrastructure",
+        "code": "TYP-02",
+        "description": "Measured plotted developments with complete boundary engineering, internal arterial roads, and utilities."
+      },
+      {
+        "id": "digital-detox-resorts",
+        "title": "Digital detox and \"black hole\" resorts",
+        "code": "TYP-03",
+        "description": "Eco-sensitive hospitality sanctuaries designed for low environmental footprint and high yield leisure hospitality."
+      },
+      {
+        "id": "serviced-living",
+        "title": "Serviced living, serviced hostels, and student housing",
+        "code": "TYP-04",
+        "description": "High-density institutional rental assets situated near major employment corridors and university districts."
+      },
+      {
+        "id": "workforce-housing",
+        "title": "Blue-collar and grey-collar housing projects",
+        "code": "TYP-05",
+        "description": "Purpose-built community housing solving corporate and industrial workforce accommodation at scale."
+      }
+    ],
+    "howWeDoIt": {
+      "headline": "Structured execution and partner accountability",
+      "points": [
+        "The company keeps land acquisition and finance in-house.",
+        "It gives construction management, sales and marketing, third-party checks, and other processes to partners.",
+        "It does this to make each partner more accountable to HNI and UHNWI investors, funds, retail buyers, end users, and landowners.",
+        "95% of projects use joint development."
+      ]
+    },
+    "valueSection": {
+      "title": "Sensation Capital",
+      "pillars": [
+        {
+          "name": "Marketing and sales",
+          "metrics": "10M sq ft exits | 15,000+ consultants",
+          "detail": "Proven marketing, 10M sq ft exits, strong branding, 15,000+ consultants, investor-backed for fast inventory sales."
+        },
+        {
+          "name": "Investment",
+          "metrics": "Global capital | Co-investors",
+          "detail": "Global capital, co-investors, smooth finance."
+        },
+        {
+          "name": "Management",
+          "metrics": "25+ projects managed",
+          "detail": "25+ projects managed with technology and cost control."
+        }
+      ]
+    },
+    "process": [
+      {
+        "step": "01",
+        "title": "Create an idea",
+        "description": "Identify strategic land parcels, evaluate micro-market demand, and structure disciplined land acquisition."
+      },
+      {
+        "step": "02",
+        "title": "Complete the project",
+        "description": "Engage expert construction partners with strict third-party quality audits and transparent progress milestones."
+      },
+      {
+        "step": "03",
+        "title": "Execution",
+        "description": "Drive phased sales through 15,000+ consultants, ensuring predictable capital return and orderly handover."
+      }
+    ],
+    "returnsCta": "Want to know about annual returns of the company?"
+  }
+}

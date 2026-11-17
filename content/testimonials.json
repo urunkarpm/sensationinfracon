@@ -1,0 +1,29 @@
+[
+  {
+    "id": "t1",
+    "name": "TODO: Client Investor Name",
+    "designation": "TODO: Private Investor / Landowner Role",
+    "project": "TODO: Specific Project Name (e.g. Hyderabad Plotted Enclave)",
+    "city": "Hyderabad",
+    "quote": "TODO: Official client testimonial quote regarding land acquisition, joint development execution, or investment yield. Client confirmation required.",
+    "photoPlaceholder": "Investor portrait placeholder"
+  },
+  {
+    "id": "t2",
+    "name": "TODO: Channel Partner Principal",
+    "designation": "TODO: Empanelled Consultant / Channel Partner",
+    "project": "TODO: Plotted Development Portfolio",
+    "city": "Bengaluru",
+    "quote": "TODO: Official channel partner testimonial quote regarding inventory transparency, sales velocity, and partner settlements. Client confirmation required.",
+    "photoPlaceholder": "Partner portrait placeholder"
+  },
+  {
+    "id": "t3",
+    "name": "TODO: Landowner Partner",
+    "designation": "TODO: Joint Development Landowner",
+    "project": "TODO: Coastal Development Project",
+    "city": "Goa",
+    "quote": "TODO: Official landowner partner testimonial quote regarding transparent joint development structuring and timely milestone delivery. Client confirmation required.",
+    "photoPlaceholder": "Landowner portrait placeholder"
+  }
+]

@@ -1,0 +1,295 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Gray & Farrar Authentic Typography (@font-face definitions) */
+@font-face {
+  font-family: 'Brandon Grotesque Light';
+  src: url('/fonts/BrandonGrotesque-Light.woff2') format('woff2'),
+       url('/fonts/BrandonGrotesque-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque Regular';
+  src: url('/fonts/BrandonGrotesque-Regular.woff2') format('woff2'),
+       url('/fonts/BrandonGrotesque-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque Medium';
+  src: url('/fonts/BrandonGrotesque-Medium.woff2') format('woff2'),
+       url('/fonts/BrandonGrotesque-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('/fonts/BrandonGrotesque-Light.woff2') format('woff2'),
+       url('/fonts/BrandonGrotesque-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('/fonts/BrandonGrotesque-Regular.woff2') format('woff2'),
+       url('/fonts/BrandonGrotesque-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('/fonts/BrandonGrotesque-Medium.woff2') format('woff2'),
+       url('/fonts/BrandonGrotesque-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Granjon LT';
+  src: url('/fonts/GranjonLT.woff2') format('woff2'),
+       url('/fonts/GranjonLT.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --color-ink: #13284A;
+  --color-brass: #B38B2E;
+  --color-paper: #F5F6F2;
+  --color-mist: #DCE2DE;
+  --color-text: #1E2A36;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-paper);
+  background-image: url('/images/bg-pattern-grey.png');
+  background-size: 1100px 30px;
+  color: var(--color-text);
+  font-family: var(--font-brandon), 'Brandon Grotesque Light', 'Brandon Grotesque', sans-serif;
+  letter-spacing: 0.7px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-granjon), 'Granjon LT', Georgia, serif;
+}
+
+/* Gray & Farrar luxury advisory typographic utilities */
+.tracking-luxury {
+  letter-spacing: 0.12em;
+}
+
+.tracking-folio {
+  letter-spacing: 0.08em;
+}
+
+/* Gray & Farrar circular Enter button animation */
+@keyframes animatecircleborder {
+  0% {
+    stroke-dashoffset: 251.2px;
+  }
+  100% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+.animate-circle-border {
+  animation: animatecircleborder 1.2s cubic-bezier(0.25, 1, 0.5, 1) 0.3s forwards;
+}
+
+/* Gray & Farrar mouse scroll indicator animation */
+@keyframes mouseScrollDot {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+.animate-mouse-dot {
+  animation: mouseScrollDot 1.4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* FullPage slide content entrance animation */
+.slide-content-hidden {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: opacity 1.2s ease-out 0.2s, transform 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.2s;
+}
+
+.slide-content-visible {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: opacity 1.2s ease-out 0.2s, transform 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.2s;
+}
+
+/* ========================================================
+   GRAY & FARRAR 1:1 INTRO MASK ANIMATION
+   ======================================================== */
+.intro-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 1000;
+  transition: top 1.5s ease-in-out 6s;
+  overflow: hidden;
+}
+
+.intro-mask.wp-loaded {
+  top: -100%;
+}
+
+.intro-mask.scroll-up-fast {
+  top: -100% !important;
+  transition: top 0.8s ease-in-out 0s !important;
+}
+
+.intro-mask .intro-mask-box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out 0.3s;
+}
+
+.intro-mask.anim-start .intro-mask-box {
+  opacity: 1;
+}
+
+.intro-mask .intro-mask-box img {
+  transform: scale(1);
+  transition: transform 2s ease-in-out 3.5s;
+}
+
+.intro-mask.anim-start .intro-mask-box img {
+  transform: scale(0.55);
+}
+
+.intro-mask .logo-text {
+  position: absolute;
+  bottom: 24px;
+  font-size: 40px;
+  letter-spacing: 0.100em;
+  color: #ba9168;
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: var(--font-bricolage), Georgia, 'Times New Roman', serif;
+  opacity: 0;
+  transition: opacity 2s ease-in-out 4.5s;
+}
+
+.intro-mask.anim-start .logo-text {
+  opacity: 1;
+}
+
+.intro-mask .logo-text-left {
+  left: -80px;
+}
+
+.intro-mask .logo-text-right {
+  right: -111px;
+}
+
+@media (max-width: 767px) {
+  .intro-mask .logo-text {
+    bottom: 28px;
+    font-size: 28px;
+  }
+  .intro-mask .logo-text-left {
+    left: -44px;
+  }
+  .intro-mask .logo-text-right {
+    right: -70px;
+  }
+}
+
+/* Accessibility: Visible Focus Rings */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #13284A;
+  outline-offset: 2px;
+}
+
+/* The SINGLE allowed animation: Home page first screen SVG plot fill */
+@keyframes plotFill1 {
+  0% { fill: transparent; }
+  100% { fill: #B38B2E; }
+}
+
+@keyframes plotFill2 {
+  0% { fill: transparent; }
+  100% { fill: #B38B2E; }
+}
+
+@keyframes plotFill3 {
+  0% { fill: transparent; }
+  100% { fill: #B38B2E; }
+}
+
+@keyframes plotFill4 {
+  0% { fill: transparent; }
+  100% { fill: #B38B2E; }
+}
+
+@keyframes plotFill5 {
+  0% { fill: transparent; }
+  100% { fill: #B38B2E; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-plot-1 {
+    animation: plotFill1 0.6s ease-out 0.2s forwards;
+  }
+  .hero-plot-2 {
+    animation: plotFill2 0.6s ease-out 0.5s forwards;
+  }
+  .hero-plot-3 {
+    animation: plotFill3 0.6s ease-out 0.8s forwards;
+  }
+  .hero-plot-4 {
+    animation: plotFill4 0.6s ease-out 1.1s forwards;
+  }
+  .hero-plot-5 {
+    animation: plotFill5 0.6s ease-out 1.4s forwards;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-plot-1,
+  .hero-plot-2,
+  .hero-plot-3,
+  .hero-plot-4,
+  .hero-plot-5 {
+    fill: #B38B2E;
+    animation: none !important;
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "hospitality": {
+    "title": "Hospitality partners",
+    "slug": "hospitality-partners",
+    "tag": "Operator collaborations",
+    "intro": "Sensation Infracon collaborates with distinguished hospitality operators and resort brands to develop digital detox sanctuaries and experiential destinations. Each partnership unites strategic land holdings with institutional-grade hospitality execution to optimize occupancy, brand prestige, and investor yields.",
+    "partnerLogos": [
+      { "id": "p1", "name": "Boutique Resort Operator", "code": "HSP-01" },
+      { "id": "p2", "name": "Eco Wellness Sanctuary", "code": "HSP-02" },
+      { "id": "p3", "name": "Heritage Retreats Group", "code": "HSP-03" },
+      { "id": "p4", "name": "Coastal Hospitality Collection", "code": "HSP-04" }
+    ],
+    "model": [
+      { "step": "01", "title": "Site curation", "desc": "Curate environmentally pristine land parcels in destination corridors." },
+      { "step": "02", "title": "Joint structuring", "desc": "Design long-term operational leases or revenue-share management contracts." },
+      { "step": "03", "title": "Turnkey handover", "desc": "Deliver fully serviced civil infrastructure for immediate operational fit-out." }
+    ]
+  },
+  "consultants": {
+    "title": "Project consultants",
+    "slug": "project-consultants",
+    "tag": "Technical & engineering panel",
+    "intro": "We engage certified master planners, structural engineers, environmental advisors, and architectural consultants across our national developments. Empanelled consultants maintain rigorous third-party oversight, ensuring structural precision and regulatory compliance.",
+    "benefits": [
+      { "title": "Independent technical audit", "desc": "Direct engagement with milestone-linked sign-offs across civil phases." },
+      { "title": "Standardized cadastre workflows", "desc": "Survey-grade boundary definitions and transparent statutory filings." },
+      { "title": "National footprint access", "desc": "Active developments across Hyderabad, Mumbai, Bengaluru, Chennai, and Goa." },
+      { "title": "Direct developer liaison", "desc": "Streamlined executive coordination with in-house technical steering committees." }
+    ]
+  },
+  "visionary": {
+    "title": "Visionary investments",
+    "slug": "visionary-investments",
+    "tag": "Sensation Capital syndication",
+    "intro": "Through Sensation Capital, we structure co-investment opportunities for HNIs, family offices, and institutional capital in high-growth Indian real estate corridors. Transparent capital allocation and disciplined exits underpin every portfolio deployment.",
+    "benefits": [
+      { "title": "Disciplined joint developments", "desc": "95% of projects utilize joint development agreements, minimizing land-holding risk." },
+      { "title": "Capital velocity", "desc": "Structured exit horizons backed by established sales channels and proven 10M sq ft track record." },
+      { "title": "Institutional governance", "desc": "Third-party escrow accounts, audited books, and periodic milestone reporting." },
+      { "title": "Direct executive access", "desc": "Dedicated investor relations office based in Hyderabad with global desk in Dubai." }
+    ]
+  },
+  "channel": {
+    "title": "Channel partners",
+    "slug": "channel-partners",
+    "tag": "Consultant network",
+    "intro": "Our network of over 15,000 consultants and channel partners forms the backbone of our distribution reach. We empower authorized partners with verified inventory, transparent commission cycles, and real-time project reporting.",
+    "benefits": [
+      { "title": "Verified plotted inventory", "desc": "Access legally vetted and surveyed plot and serviced living allocations." },
+      { "title": "Predictable commission disbursements", "desc": "Transparent contract terms with timely milestone-driven payouts." },
+      { "title": "Direct collateral & sales enablement", "desc": "Comprehensive site layouts, marketing kits, and sales desk support." },
+      { "title": "Referral program integration", "desc": "Seamless participation via the Sensation ECRP portal (sensationecrp.com)." }
+    ]
+  }
+}

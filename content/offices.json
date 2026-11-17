@@ -1,0 +1,107 @@
+[
+  {
+    "id": "hyderabad",
+    "city": "Hyderabad",
+    "isHeadOffice": true,
+    "designation": "Head office",
+    "addressLines": [
+      "Door No. 8-2-616/1, 2nd and 4th Floor, Saha Building",
+      "Road No. 11, Near Hotel Minerva Grand, Banjara Hills",
+      "Hyderabad 500034, Telangana, India"
+    ],
+    "phone": "+91 98853 33333",
+    "email": "kk@sensationgroup.in",
+    "mapQuery": "Saha Building, Road No 11, Banjara Hills, Hyderabad, Telangana 500034",
+    "mapUrl": "https://maps.google.com/?q=Saha+Building,+Road+No+11,+Banjara+Hills,+Hyderabad+500034"
+  },
+  {
+    "id": "mumbai",
+    "city": "Mumbai",
+    "isHeadOffice": false,
+    "designation": "Regional office",
+    "addressLines": [
+      "B-4402, Wing-B (Zeus), 44th Floor, Kohinoor Square",
+      "Dadar West, Opposite Shiv Sena Bhavan",
+      "Mumbai 400028, Maharashtra, India"
+    ],
+    "phone": "+91 98853 33333",
+    "email": "kk@sensationgroup.in",
+    "mapQuery": "Kohinoor Square, Dadar West, Mumbai, Maharashtra 400028",
+    "mapUrl": "https://maps.google.com/?q=Kohinoor+Square,+Dadar+West,+Mumbai+400028"
+  },
+  {
+    "id": "bengaluru",
+    "city": "Bengaluru",
+    "isHeadOffice": false,
+    "designation": "Regional office",
+    "addressLines": [
+      "Ground Floor, 29/4, Trade Centre",
+      "Race Course Road",
+      "Bengaluru 560001, Karnataka, India"
+    ],
+    "phone": "+91 98853 33333",
+    "email": "kk@sensationgroup.in",
+    "mapQuery": "Trade Centre, Race Course Road, Bengaluru, Karnataka 560001",
+    "mapUrl": "https://maps.google.com/?q=Trade+Centre,+Race+Course+Road,+Bengaluru+560001"
+  },
+  {
+    "id": "chennai",
+    "city": "Chennai",
+    "isHeadOffice": false,
+    "designation": "Regional office",
+    "addressLines": [
+      "Bhoomika Gardens, Illalur-Kattur Road",
+      "Kalavakkam, OMR",
+      "Chennai 603110, Tamil Nadu, India"
+    ],
+    "phone": "+91 98853 33333",
+    "email": "kk@sensationgroup.in",
+    "mapQuery": "Bhoomika Gardens, Kalavakkam, OMR, Chennai 603110",
+    "mapUrl": "https://maps.google.com/?q=Bhoomika+Gardens,+Kalavakkam,+OMR,+Chennai+603110"
+  },
+  {
+    "id": "goa",
+    "city": "Goa",
+    "isHeadOffice": false,
+    "designation": "Regional office",
+    "addressLines": [
+      "A 201-A 207, Goa Junction",
+      "Opp. Vagator Petrol Pump, Anjuna, Bardez",
+      "North Goa 403509, Goa, India"
+    ],
+    "phone": "+91 98853 33333",
+    "email": "kk@sensationgroup.in",
+    "mapQuery": "Goa Junction, Vagator, Anjuna, North Goa 403509",
+    "mapUrl": "https://maps.google.com/?q=Goa+Junction,+Opp+Vagator+Petrol+Pump,+Anjuna,+Goa+403509"
+  },
+  {
+    "id": "visakhapatnam",
+    "city": "Visakhapatnam",
+    "isHeadOffice": false,
+    "designation": "Regional office",
+    "addressLines": [
+      "15, Sunray Beach Front, Bhogapuram",
+      "Visakhapatnam 535216",
+      "Andhra Pradesh, India"
+    ],
+    "phone": "+91 98853 33333",
+    "email": "kk@sensationgroup.in",
+    "mapQuery": "Sunray Beach Front, Bhogapuram, Visakhapatnam 535216",
+    "mapUrl": "https://maps.google.com/?q=Sunray+Beach+Front,+Bhogapuram,+Visakhapatnam+535216"
+  },
+  {
+    "id": "dubai",
+    "city": "Dubai",
+    "isHeadOffice": false,
+    "designation": "International office (Sensation MegaCorp FZCO)",
+    "addressLines": [
+      "Suite 705, Royal Bay, East Crescent",
+      "Palm Jumeirah",
+      "Dubai, United Arab Emirates"
+    ],
+    "phone": "+91 98853 33333",
+    "email": "kk@sensationgroup.in",
+    "mapQuery": "Royal Bay, East Crescent, Palm Jumeirah, Dubai",
+    "mapUrl": "https://maps.google.com/?q=Royal+Bay,+Palm+Jumeirah,+Dubai"
+  }
+]
